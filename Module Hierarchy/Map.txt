@@ -1,0 +1,102 @@
+Module Hierarchy
+    │
+    ├──Map.py
+    │
+    ├──Map.txt
+    │
+    ├──Module Hierarhy Principles.md
+    │
+    │
+    ├──projects
+    │      │
+    │      └──8bit-JazzRandomizer
+    │             │
+    │             └──Models
+    │                   │
+    │                   └──Mechanics
+    │                          │
+    │                          ├──JazzSynth.py
+    │                          │
+    │                          ├──RangeMapper.py
+    │                          │
+    │                          │
+    │                          └──__pycache__
+    │                                 │
+    │                                 ├──JazzSynth.cpython-312.pyc
+    │                                 │
+    │                                 └──RangeMapper.cpython-312.pyc
+    │  
+    └──system
+          │
+          ├──playground.py
+          │
+          │
+          ├──system_models
+          │      │
+          │      ├──Logging
+          │      │     │
+          │      │     ├──Logger.py
+          │      │     │
+          │      │     │
+          │      │     └──__pycache__
+          │      │            │
+          │      │            └──Logger.cpython-312.pyc
+          │      │  
+          │      ├──Scoping
+          │      │     │
+          │      │     ├──ScopeBuilder.py
+          │      │     │
+          │      │     │
+          │      │     └──__pycache__
+          │      │            │
+          │      │            └──ScopeBuilder.cpython-312.pyc
+          │      │  
+          │      └──Tests
+          │           │
+          │           ├──AtomicTests
+          │           │      │
+          │           │      ├──AtomicTest.py
+          │           │      │
+          │           │      ├──ClampTest.py
+          │           │      │
+          │           │      ├──DefaultTest.py
+          │           │      │
+          │           │      ├──SetterTest.py
+          │           │      │
+          │           │      ├──SignatureTest.py
+          │           │      │
+          │           │      │
+          │           │      └──__pycache__
+          │           │             │
+          │           │             ├──AtomicTest.cpython-312.pyc
+          │           │             │
+          │           │             ├──ClampTest.cpython-312.pyc
+          │           │             │
+          │           │             ├──DefaultTest.cpython-312.pyc
+          │           │             │
+          │           │             ├──SetterTest.cpython-312.pyc
+          │           │             │
+          │           │             └──SignatureTest.cpython-312.pyc
+          │           │  
+          │           └──TestOrchestration
+          │                  │
+          │                  ├──TestGenerator.py
+          │                  │
+          │                  ├──TestRunner.py
+          │                  │
+          │                  │
+          │                  └──__pycache__
+          │                         │
+          │                         ├──TestGenerator.cpython-312.pyc
+          │                         │
+          │                         └──TestRunner.cpython-312.pyc
+          │  
+          └──test_reports
+                 │
+                 ├──Logger_test_report.json
+                 │
+                 ├──ScopeBuilder_test_report.json
+                 │
+                 ├──TestGenerator_test_report.json
+                 │
+                 └──TestRunner_test_report.json

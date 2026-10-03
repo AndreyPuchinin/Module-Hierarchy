@@ -1,0 +1,48 @@
+{
+  "model_name": "ScopeBuilder",
+  "instance_created": true,
+  "test_results": {
+    "tests": [
+      {
+        "test_name": "SignatureTest",
+        "status": "passed",
+        "message": "Constructor has 0 required parameter(s) - ideal for MH",
+        "details": {
+          "required_params": 0,
+          "param_names": []
+        }
+      },
+      {
+        "test_name": "SetterTest",
+        "status": "warning",
+        "message": "No setters found - model may not follow MH pattern",
+        "details": {
+          "total_setters": 0,
+          "valid_setters": 0,
+          "invalid_setters": 0,
+          "setters": []
+        }
+      },
+      {
+        "test_name": "ClampTest",
+        "status": "skipped",
+        "message": "No valid setters found to test",
+        "details": null
+      },
+      {
+        "test_name": "DefaultTest",
+        "status": "warning",
+        "message": "No setters found - cannot verify defaults",
+        "details": null
+      }
+    ],
+    "total_tests": 4,
+    "statistics": {
+      "passed": 1,
+      "failed": 0,
+      "warnings": 2,
+      "skipped": 1,
+      "total": 4
+    }
+  }
+}

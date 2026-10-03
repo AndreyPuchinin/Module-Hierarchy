@@ -1,0 +1,88 @@
+{
+  "model_name": "Logger",
+  "instance_created": true,
+  "test_results": {
+    "tests": [
+      {
+        "test_name": "SignatureTest",
+        "status": "passed",
+        "message": "Constructor has 0 required parameter(s) - ideal for MH",
+        "details": {
+          "required_params": 0,
+          "param_names": []
+        }
+      },
+      {
+        "test_name": "SetterTest",
+        "status": "passed",
+        "message": "All 1 setters follow MH rule (1 parameter each)",
+        "details": {
+          "total_setters": 1,
+          "valid_setters": 1,
+          "invalid_setters": 0,
+          "setters": [
+            {
+              "name": "set_log_context",
+              "param_count": 1,
+              "is_valid_mh_setter": true
+            }
+          ]
+        }
+      },
+      {
+        "test_name": "ClampTest",
+        "status": "passed",
+        "message": "All 3 clamp tests passed - setters handle extreme values",
+        "details": {
+          "total_tests": 3,
+          "passed": 3,
+          "failed": 0,
+          "results": [
+            {
+              "setter": "set_log_context",
+              "test_value": -999999,
+              "status": "passed"
+            },
+            {
+              "setter": "set_log_context",
+              "test_value": 0,
+              "status": "passed"
+            },
+            {
+              "setter": "set_log_context",
+              "test_value": 999999,
+              "status": "passed"
+            }
+          ]
+        }
+      },
+      {
+        "test_name": "DefaultTest",
+        "status": "passed",
+        "message": "All 1 setters have corresponding defaults",
+        "details": {
+          "total_setters": 1,
+          "matched": 1,
+          "mismatches": 0,
+          "matched_setters": [
+            {
+              "setter": "set_log_context",
+              "attribute": "_log_context",
+              "default_value": "999999",
+              "status": "ok"
+            }
+          ],
+          "missing_defaults": []
+        }
+      }
+    ],
+    "total_tests": 4,
+    "statistics": {
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "total": 4
+    }
+  }
+}

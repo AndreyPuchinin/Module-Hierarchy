@@ -1,0 +1,114 @@
+{
+  "model_name": "TestGenerator",
+  "instance_created": true,
+  "test_results": {
+    "tests": [
+      {
+        "test_name": "SignatureTest",
+        "status": "passed",
+        "message": "Constructor has 0 required parameter(s) - ideal for MH",
+        "details": {
+          "required_params": 0,
+          "param_names": []
+        }
+      },
+      {
+        "test_name": "SetterTest",
+        "status": "passed",
+        "message": "All 2 setters follow MH rule (1 parameter each)",
+        "details": {
+          "total_setters": 2,
+          "valid_setters": 2,
+          "invalid_setters": 0,
+          "setters": [
+            {
+              "name": "set_output_directory",
+              "param_count": 1,
+              "is_valid_mh_setter": true
+            },
+            {
+              "name": "set_test",
+              "param_count": 1,
+              "is_valid_mh_setter": true
+            }
+          ]
+        }
+      },
+      {
+        "test_name": "ClampTest",
+        "status": "passed",
+        "message": "All 6 clamp tests passed - setters handle extreme values",
+        "details": {
+          "total_tests": 6,
+          "passed": 6,
+          "failed": 0,
+          "results": [
+            {
+              "setter": "set_output_directory",
+              "test_value": -999999,
+              "status": "passed"
+            },
+            {
+              "setter": "set_output_directory",
+              "test_value": 0,
+              "status": "passed"
+            },
+            {
+              "setter": "set_output_directory",
+              "test_value": 999999,
+              "status": "passed"
+            },
+            {
+              "setter": "set_test",
+              "test_value": -999999,
+              "status": "passed"
+            },
+            {
+              "setter": "set_test",
+              "test_value": 0,
+              "status": "passed"
+            },
+            {
+              "setter": "set_test",
+              "test_value": 999999,
+              "status": "passed"
+            }
+          ]
+        }
+      },
+      {
+        "test_name": "DefaultTest",
+        "status": "passed",
+        "message": "All 2 setters have corresponding defaults",
+        "details": {
+          "total_setters": 2,
+          "matched": 2,
+          "mismatches": 0,
+          "matched_setters": [
+            {
+              "setter": "set_output_directory",
+              "attribute": "_output_directory",
+              "default_value": "",
+              "status": "ok"
+            },
+            {
+              "setter": "set_test",
+              "attribute": "_test",
+              "default_value": "None",
+              "status": "ok"
+            }
+          ],
+          "missing_defaults": []
+        }
+      }
+    ],
+    "total_tests": 4,
+    "statistics": {
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "skipped": 0,
+      "total": 4
+    }
+  }
+}
